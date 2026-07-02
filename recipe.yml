@@ -1,3 +1,4 @@
+# vib
 name: Nilla OS # Replace this name with your image name
 id: nilla # Replace this ID with your image ID
 stages:
@@ -29,7 +30,7 @@ stages:
       packages:
       - aqemu
       - broadcom-sta-dkms
-      - barrier
+      - deskflow
      #- bash-color-prompt
      #- bcache-tools
      #- evtest
@@ -66,10 +67,13 @@ stages:
      #- samba
      #- solaar
      #- stress-ng
-     #- tailscale
+      - tailscale
       - tmux
      #- usbmuxd
       - wireguard-tools
+      - openvpn3-client
+      - network-manager-openvpn
+      - network-manager-openvpn-gnome 
      #- xprop
       - wl-clipboard
      #- zsh
